@@ -5,7 +5,8 @@
 require 'net/http'
 require 'getoptlong'
 
-DEBUG = true
+# For debugging & development
+DEBUG = false
 
 class Expand_URL
 
