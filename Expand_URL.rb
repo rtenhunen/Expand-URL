@@ -140,11 +140,7 @@ end
 
 u = Expand_URL.new(URL)
 print "#{URL} --> \"#{u.title}\" <#{u.target}>"
-if (Hops)
-	puts " - #{u.hops} hop#{"s" if u.hops > 1}" 
-else
-	print "\n"
-end
+(Hops) ? (puts " - #{u.hops} hop#{"s" if u.hops > 1}" ) : (print "\n")
 
 
 if (OPEN)
